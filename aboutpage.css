@@ -1,0 +1,69 @@
+body {
+  background:linear-gradient(to right, beige, yellow, lightgreen);
+  
+}
+p {
+  color: green;
+}
+.craft {
+  text-align: center;
+  padding: 25px;
+  margin: 5px;
+  border: 2px;
+  border-style: solid;
+  border-color: blue;
+  background-color: lightgreen;
+  font-size: 25px;
+  color: purple;
+}
+.creativity {
+  text-align: center;
+  padding:25px;
+  margin: 5px;
+  border: 2px;
+  border-style: solid;
+  border-color: blue;
+  background-color: lightgreen;
+  color: darkorange;
+  font-size: 25px;
+}
+.character {
+  text-align: center;
+  padding: 25px;
+  margin: 5px;
+  border: 2px;
+  border-style: solid;
+  border-color:blue;
+  background-color: lightgreen;
+  color: violet;
+  font-size: 25px;
+}
+.icon:after {
+  content: "";
+  position: fixed;
+  top: -110%;
+  left: -210%;
+  width: 200%;
+  height: 200%;
+  opacity: 0;
+  transform: rotate(30deg);
+  background: rgba(255, 255, 255, 0.13);
+  background: linear-gradient(
+    to right, 
+    rgba(255, 255, 255, 0.13) 0%,
+    rgba(255, 255, 255, 0.13) 77%,
+    rgba(255, 255, 255, 0.5) 92%,
+    rgba(255, 255, 255, 0.0) 100%
+  );
+}
+.icon:hover:after {
+  opacity: 1;
+  top: -30%;
+  left: -30%;
+  transition-property: left, top, opacity;
+  transition-duration: 0.7s, 0.7s, 0.15s;
+  transition-timing-function: ease-in-out;
+}
+.icon:active:after {
+  opacity: 0;
+}

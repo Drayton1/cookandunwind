@@ -9,7 +9,7 @@ function swapText() {
   } 
  else {
     x.innerHTML = "Yes...";
-  }};
+  }}
   
 function myFunction() {
   var element = document.getElementById("myDIV");

@@ -166,3 +166,31 @@ li a:hover {
 .dropdown:hover .dropbtn {
   background-color: #3e8e41;
 }
+#myDIV1{
+    background: linear-gradient(270deg, #acde50, #c4a930, #d65544);
+    background-size: 600% 600%;
+    -webkit-animation: AnimationName 7s ease infinite;
+    -moz-animation: AnimationName 7s ease infinite;
+    -o-animation: AnimationName 7s ease infinite;
+    animation: AnimationName 7s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}

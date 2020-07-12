@@ -121,11 +121,6 @@ color:teal;
   background: #ddd;
   color: black;
 }
-#myDIV {
- 
-  color:blue;
-  background:linear-gradient(270deg,cyan, lightblue, lightgreen);
-}
 ul {
   list-style-type: none;
   margin: 0;
@@ -182,8 +177,19 @@ li a:hover {
 .dropdown:hover .dropbtn {
   background-color: #3e8e41;
 }
+#myDiv {
+  padding: 5px;
+  font-size: 13px;
+  border-radius: 25px;
+  
+}
 #myDIV1{
-    background: linear-gradient(270deg, #acde50, #c4a930, #d65544);
+  padding: 5px;
+  font-size: 13px;
+  border-radius: 25px;
+  color:blue;
+  background:linear-gradient(270deg,cyan, lightblue, lightgreen);
+    /*background: linear-gradient(270deg, #acde50, #c4a930, #d65544);*/
     background-size: 600% 600%;
     -webkit-animation: AnimationName 7s ease infinite;
     -moz-animation: AnimationName 7s ease infinite;
@@ -209,5 +215,4 @@ li a:hover {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
-
 }

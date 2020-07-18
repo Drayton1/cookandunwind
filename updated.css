@@ -216,3 +216,11 @@ li a:hover {
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
+/*.h1 {
+  transition: transform .8s;
+}
+.h1:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5); 
+  transform: scale(1.5); 
+*//*just here in case I want ot make something pop*/

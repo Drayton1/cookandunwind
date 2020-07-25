@@ -1,383 +1,230 @@
 body {
-  background-color: white;
-  color: black;
-  font-family:helvetica;
-}
-.h1 {
-  animation: bounce 3s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-}
-@keyframes bounce { 
-  0% { transform: translateY(0); }
-  30% { transform: translateY(-50px); }
-  50% { transform: translateY(0); }
-  100% { transform: translateY(0); }
-}
-.dark-mode {
-  background-color: black;
-  color: white;
-}
-.darkButton {
-  padding: 5px;
-  font-size: 13px;
- border-radius: 25px;
- background: linear-gradient(white, darkgray);
- color:darkgreen;
- font-weight: bold;
-  opacity:0.6;
-  position: absolute;
-  top: 20px;
-  right: 10px;
-}
-.darkButton:hover {
-color:black;
-box-shadow: 0 3px 3px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-.swapText {
-  color: blue;
-  padding: 5px;
-  font-size: 13px;
-  border-radius: 25px;
-  background: linear-gradient(cyan, lightblue, lightgreen);
-  position: relative;
-  display: inline-block;
-  left: 200px;
-}
-
-.swapText:hover {
-
-color:teal;
-
- box-shadow: 0 3px 3px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-
-}
-.myStyle {
-  width: 50%;
-  padding: 10px;
-  background-color: green;
-  color: white;
-  font-size: 25px;
-  border-radius: 15px;
-}
-.tryRecipebtn {
-  color: blue;
-  background: linear-gradient(cyan, lightblue, lightgreen);
-  padding: 5px;
-  font-size: 13px;
-  border-radius: 25px;
-}
-.tryRecipe:hover {
-  color: orange;
+    background-color: white;
+    color: black;
+    font-family:helvetica;
+  }
+  .h1 {
+    animation: bounce 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
+  @keyframes bounce { 
+    0% { transform: translateY(0); }
+    30% { transform: translateY(-50px); }
+    50% { transform: translateY(0); }
+    100% { transform: translateY(0); }
+  }
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+  .darkButton {
+    padding: 5px;
+    font-size: 13px;
+   border-radius: 25px;
+   background: linear-gradient(white, darkgray);
+   color:darkgreen;
+   font-weight: bold;
+    opacity:0.6;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+  }
+  .darkButton:hover {
+  color:black;
   box-shadow: 0 3px 3px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-
-}
-
-.pagination {
-
-  display: inline-block;
-
-  /*background: linear-gradient(270deg, cyan, lightblue, lightgreen);*/
-
-  border-radius: 10px;
-
-  padding:10px;
-
-  margin:100px;
-
-  text-align:center;
-
-  background-color: #333;
-
-  opacity: 0.6;
-
-}
-.pagination a {
-
-  color: blue;
-
-  float: left;
-
-  padding: 8px 16px;
-
-  text-decoration: none;
-
-  border-radius: 5px;
-
-  transition: background-color .3s;
-
-  margin: 0 4px;
-
-}
-
-.pagination a.active{
-
-  background-color: #4CAF50;
-
-  color: lightgreen;
-
-  border-radius: 5px;
-
-}
-
-.pagination a:hover:not(.active){
-
-  background-color: lightblue;
-
-}
-
-#myVideo {
-
-  position: fixed;
-
-  right: 0;
-
-  bottom: 0;
-
-  min-width: 100%; 
-
-  min-height: 100%;
-
-  opacity: 0.3;
-
-  z-index:-1;
-
-}
-
-.content {
-
-  position: fixed;
-
-  bottom: 0;
-
-  background: rgba(0, 0, 0, 0.5);
-
-  color: #f1f1f1;
-
-  width: 100%;
-
-  padding: 20px;
-
-  z-index: -1;
-
-  opacity: 0.6;
-
-}
-
-#myBtn {
-
- font-size: 10px;
-
-  padding: 1px;
-
-  border: none;
-
-  background: #000;
-
-  color: #fff;
-
-  cursor: pointer;
-
-}
-
-#myBtn:hover {
-
-  background: #ddd;
-
-  color: black;
-
-}
-
-ul {
-
-  list-style-type: none;
-
-  margin: 0;
-
-  padding: 0;
-
-  overflow: hidden;
-
-  background-color: #333;
-
-}
-
-li {
-
-  float: left;
-
-}
-
-li a {
-
-  display: flex;
-
-  color: white;
-
-  text-align: center;
-
-  padding: 14px 16px;
-
-  text-decoration: none;
-
-}
-
-li a:hover {
-
-  background-color: #111;
-
-}
-
-.dropbtn {
-
-  background:linear-gradient(cyan, lightblue, lightgreen);
-
-  color: blue;
-
-  padding: 5px;
-
-  font-size: 13px;
-
-  border-radius: 25px;
-
-  cursor: pointer;
-
-}
-
-.dropdown {
-
-  position: relative;
-
-  display: inline-block;
-
-  right: 200px;
-
-}
-
-.dropdown-content {
-
-  display: none;
-
-  position: absolute;
-
-  background-color: #f9f9f9;
-
-  min-width: 160px;
-
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-
-  z-index: 1;
-
-}
-
-.dropdown-content a {
-
-  color: green;
-
-  padding: 4px 6px;
-
-  text-decoration: none;
-
-  display: block;
-
-}
-
-.dropdown-content a:hover {
-
-  background-color: #f1f1f1;
-
-}
-
-.dropdown:hover .dropdown-content {
-
-  display: block;
-
-}
-
-.dropdown:hover .dropbtn {
-
-  background-color: #3e8e41;
-
-}
-
-#myDiv {
-
-  padding: 5px;
-
-  font-size: 13px;
-
-  border-radius: 25px;
-  text:
-
+  }
+  .swapText {
+    color: blue;
+    padding: 5px;
+    font-size: 13px;
+    border-radius: 25px;
+    background: linear-gradient(cyan, lightblue, lightgreen);
+    position: relative;
+    display: inline-block;
+    left: 200px;
+  }
+  .swapText:hover {
+  color:teal;
+   box-shadow: 0 3px 3px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  .myStyle {
+    width: 50%;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    font-size: 25px;
+    border-radius: 15px;
+  }
+  .tryRecipebtn {
+    color: blue;
+    background: linear-gradient(cyan, lightblue, lightgreen);
+    padding: 5px;
+    font-size: 13px;
+    border-radius: 25px;
+  }
+  .tryRecipe:hover {
+    color: orange;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  .pagination {
+    display: inline-block;
+    /*background: linear-gradient(270deg, cyan, lightblue, lightgreen);*/
+    border-radius: 10px;
+    padding:10px;
+    margin:100px;
+    text-align:center;
+    background-color: #333;
+    opacity: 0.6;
+  }
+  .pagination a {
+    color: blue;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color .3s;
+    margin: 0 4px;
+  }
+  .pagination a.active{
+    background-color: #4CAF50;
+    color: lightgreen;
+    border-radius: 5px;
+  }
+  .pagination a:hover:not(.active){
+    background-color: lightblue;
+  }
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    opacity: 0.3;
+    z-index:-1;
+  }
+  .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    z-index: -1;
+    opacity: 0.6;
+  }
+  #myBtn {
+   font-size: 10px;
+    padding: 1px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  li {
+    float: left;
+  }
+  li a {
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  li a:hover {
+    background-color: #111;
+  }
+  .dropbtn {
+    background:linear-gradient(cyan, lightblue, lightgreen);
+    color: blue;
+    padding: 5px;
+    font-size: 13px;
+    border-radius: 25px;
+    cursor: pointer;
+  }
   
-
-}
-
-#myDIV1{
-
-  padding: 5px;
-
-  font-size: 13px;
-
-  border-radius: 25px;
-
-  color:blue;
-
-  background:linear-gradient(270deg,cyan, lightblue, lightgreen);
-
-    /*background: linear-gradient(270deg, #acde50, #c4a930, #d65544);*/
-
-    background-size: 600% 600%;
-
-    -webkit-animation: AnimationName 7s ease infinite;
-
-    -moz-animation: AnimationName 7s ease infinite;
-
-    -o-animation: AnimationName 7s ease infinite;
-
-    animation: AnimationName 7s ease infinite;
-
-}
-
-@-webkit-keyframes AnimationName {
-
-    0%{background-position:0% 50%}
-
-    50%{background-position:100% 50%}
-
-    100%{background-position:0% 50%}
-
-}
-
-@-moz-keyframes AnimationName {
-
-    0%{background-position:0% 50%}
-
-    50%{background-position:100% 50%}
-
-    100%{background-position:0% 50%}
-}
-@-o-keyframes AnimationName {
-
-    0%{background-position:0% 50%}
-
-    50%{background-position:100% 50%}
-
-    100%{background-position:0% 50%}
-}
-@keyframes AnimationName {
-
-    0%{background-position:0% 50%}
-
-    50%{background-position:100% 50%}
-
-    100%{background-position:0% 50%}
-}
-/*.h1 {
-  transition: transform .8s;
-}
-.h1:hover {
-  -ms-transform: scale(1.5);
-  -webkit-transform: scale(1.5); 
-  transform: scale(1.5); 
-*//*just here in case I want ot make something pop*/
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    right: 200px;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: green;
+    padding: 4px 6px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+  #myDiv {
+    padding: 5px;
+    font-size: 13px;
+    border-radius: 25px;
+  }
+  #myDIV1{
+    padding: 5px;
+    font-size: 13px;
+    border-radius: 25px;
+    color:blue;
+    background:linear-gradient(270deg,cyan, lightblue, lightgreen);
+      /*background: linear-gradient(270deg, #acde50, #c4a930, #d65544);*/
+      background-size: 600% 600%;
+      -webkit-animation: AnimationName 7s ease infinite;
+      -moz-animation: AnimationName 7s ease infinite;
+      -o-animation: AnimationName 7s ease infinite;
+      animation: AnimationName 7s ease infinite;
+  }
+  @-webkit-keyframes AnimationName {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+  @-moz-keyframes AnimationName {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+  @-o-keyframes AnimationName {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+  @keyframes AnimationName {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+  /*.h1 {
+    transition: transform .8s;
+  }
+  .h1:hover {
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5); 
+  *//*just here in case I want ot make something pop*/
